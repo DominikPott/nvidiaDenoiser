@@ -165,6 +165,22 @@
   <ItemGroup>
     <ClCompile Include="nvidiaDenoiser.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\ProgramData\NVIDIA Corporation\OptiX SDK 5.1.0\bin64\cudart64_90.dll" />
+    <None Include="C:\ProgramData\NVIDIA Corporation\OptiX SDK 5.1.0\bin64\cudnn64_7.dll" />
+    <None Include="C:\ProgramData\NVIDIA Corporation\OptiX SDK 5.1.0\bin64\optix.51.dll" />
+    <None Include="C:\ProgramData\NVIDIA Corporation\OptiX SDK 5.1.0\bin64\optix_denoiser.51.dll">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </DeploymentContent>
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </DeploymentContent>
+    </None>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
